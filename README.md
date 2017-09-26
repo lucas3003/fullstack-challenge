@@ -76,4 +76,4 @@ Deixamos pronto aqui neste repositório um projeto "blueprint blank" em Angular 
     ```
 
 ## Dúvidas
-Envie suas dúvidas diretamente para jean.rogatis@dalasolucoes.com.br ou abrindo uma issue
+Envie suas dúvidas diretamente para jean.rogatis@samconnect.com.br ou abrindo uma issue
