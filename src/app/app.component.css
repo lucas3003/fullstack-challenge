@@ -1,0 +1,78 @@
+.upperContainer{
+	background-color: #00b8e2; 
+	height: 230px;
+
+}
+
+.bottomContainer{
+	background-color: white; 
+	height: 704px;
+}
+
+.title{
+	margin-top: 43px;
+	font-family: "Arial MT", "Arial";
+	color: white;
+	font-weight: bold;
+}
+
+.subtitle{
+	margin-top: 22px;
+	font-family: "Arial MT", "Arial";
+	color: white;
+}
+
+.nameInput{
+	position: absolute; 
+	
+	width: 15%;
+}
+
+.lastNameInput{
+	position: absolute; 
+	margin-left: 16%;
+
+	width: 15%;
+}
+
+.participationInput{
+	position: absolute; 
+	margin-left: 32%;
+
+	width: 15%;
+}
+
+.submitInput{
+	position: absolute; 
+	margin-left: 48%;
+	width: 15%;
+	
+}
+
+input{
+	border: 0px solid;
+	height: 50px;
+}
+
+.inputGroup{
+	top: 57%;
+	left:50%;
+
+}
+
+.center {
+	margin: auto;
+	width: 65%;
+}
+
+.dataTitle{
+	margin-top: 90px;
+}
+
+th{
+	width: 20%;
+}
+
+td{
+	text-align: left;
+}
