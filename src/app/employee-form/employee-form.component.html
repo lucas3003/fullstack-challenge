@@ -1,0 +1,6 @@
+<div class="row inputGroup center">
+	<input type="text" class="nameInput" placeholder="Nome" #name>
+	<input type="text" class="lastNameInput" placeholder="Sobrenome" #lastName>
+	<input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="participationInput" placeholder="Participação" #participation>
+	<input type="submit" class="submitInput" value="ENVIAR" (click)="newEmployee(name.value, lastName.value, participation.value)">
+</div>	

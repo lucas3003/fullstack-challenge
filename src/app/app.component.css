@@ -22,57 +22,7 @@
 	color: white;
 }
 
-.nameInput{
-	position: absolute; 
-	
-	width: 15%;
-}
-
-.lastNameInput{
-	position: absolute; 
-	margin-left: 16%;
-
-	width: 15%;
-}
-
-.participationInput{
-	position: absolute; 
-	margin-left: 32%;
-
-	width: 15%;
-}
-
-.submitInput{
-	position: absolute; 
-	margin-left: 48%;
-	width: 15%;
-	
-}
-
-input{
-	border: 0px solid;
-	height: 50px;
-}
-
-.inputGroup{
-	top: 57%;
-	left:50%;
-
-}
-
-.center {
-	margin: auto;
-	width: 65%;
-}
-
 .dataTitle{
 	margin-top: 90px;
 }
 
-th{
-	width: 20%;
-}
-
-td{
-	text-align: left;
-}
