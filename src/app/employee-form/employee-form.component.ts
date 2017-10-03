@@ -1,5 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { EmployeeServiceService } from '../employee-service.service';
+import { MessageService } from '../message.service';
+
 
 @Component({
   selector: 'app-employee-form',
@@ -9,13 +11,47 @@ import { EmployeeServiceService } from '../employee-service.service';
 })
 export class EmployeeFormComponent implements OnInit {
 
-  constructor(private employeeService: EmployeeServiceService) { }
+  nameStyle: string = "nameInput";
+  lastNameStyle: string = "lastNameInput";
+  participationStyle: string = "participationInput";
+
+  name:string = '';
+  lastName:string = '';
+  participation:string = '';
+
+  constructor(private employeeService: EmployeeServiceService, private messageService: MessageService) { }
 
   ngOnInit() {
   }
 
-  newEmployee(name:string, lastName:string, participation:number){
-  	this.employeeService.newEmployee(name, lastName, participation).subscribe(data => console.log(data));
+  newEmployee(){
+  	this.nameStyle = 'nameInput';
+  	this.lastNameStyle = 'lastNameInput';
+  	this.participationStyle = 'participationInput';
+
+  	this.employeeService.newEmployee(this.name, this.lastName, this.participation).subscribe(data => {
+  	  if(data.success == 'true'){
+  	  	this.messageService.sendMessage('new employee created!');
+  	  	this.name = "";
+  	  	this.lastName= "";
+  	  	this.participation = "";
+  	  }
+  	  else{
+  	  	if(data.name == 'false')
+  	  		this.nameStyle = 'nameInput invalid';
+
+  	  	if(data.lastName == 'false')
+  	  		this.lastNameStyle = 'lastNameInput invalid';
+
+  	  	if(data.participation == 'false')
+  	  		this.participationStyle = 'participationInput invalid'
+
+  	  }
+
+
+
+  	});
+  	
   }
 
 }

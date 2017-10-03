@@ -10,6 +10,8 @@ import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.componen
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { EmployeeFormComponent } from './employee-form/employee-form.component';
 
+import { MessageService } from './message.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,7 @@ import { EmployeeFormComponent } from './employee-form/employee-form.component';
     HttpModule,
     ChartsModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

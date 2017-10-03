@@ -1,32 +1,35 @@
 .nameInput{
 	position: absolute; 
-	
+	border: 0px solid;
 	width: 15%;
 }
 
 .lastNameInput{
 	position: absolute; 
 	margin-left: 16%;
-
+	border: 0px solid;
 	width: 15%;
 }
 
 .participationInput{
 	position: absolute; 
 	margin-left: 32%;
-
+	border: 0px solid;
 	width: 15%;
 }
 
 .submitInput{
 	position: absolute; 
 	margin-left: 48%;
-	width: 15%;
-	
+	width: 8%;
+	background-color: transparent;
+	color: white;
+	border-color: white;
+	border-style: solid;
 }
 
 input{
-	border: 0px solid;
+	
 	height: 50px;
 }
 
@@ -39,4 +42,8 @@ input{
 .center {
 	margin: auto;
 	width: 65%;
+}
+
+.invalid{
+    border: 2px solid red;
 }

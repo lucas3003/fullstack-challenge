@@ -1,6 +1,7 @@
 <div class="row inputGroup center">
-	<input type="text" class="nameInput" placeholder="Nome" #name>
-	<input type="text" class="lastNameInput" placeholder="Sobrenome" #lastName>
-	<input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="participationInput" placeholder="Participação" #participation>
-	<input type="submit" class="submitInput" value="ENVIAR" (click)="newEmployee(name.value, lastName.value, participation.value)">
+	<input type="text" [className]="nameStyle" placeholder="Nome" [(ngModel)]="name">
+	<input type="text" [className]="lastNameStyle" placeholder="Sobrenome" [(ngModel)]="lastName">
+	<input type="text" onkeypress='return event.charCode == 0 || (event.charCode >= 48 && event.charCode <= 57)' [className]="participationStyle" placeholder="Participação" [(ngModel)]="participation">
+	<input type="submit" class="submitInput" value="ENVIAR" (click)="newEmployee();">
+
 </div>	

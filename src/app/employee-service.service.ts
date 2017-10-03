@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 export class EmployeeServiceService {
 
 
-  private apiUrl = 'http://localhost:3000/employees'
+  private apiUrl = 'http://localhost:3000/employees';
 
   constructor(private http: Http) {} 
 
@@ -15,7 +15,6 @@ export class EmployeeServiceService {
   }
 
   newEmployee(name, lastName, participation){
-  	console.log('newEmployee called')
   	let employee = {'name': name, 'lastName': lastName, 'participation': participation}
   	return this.http.post(this.apiUrl, employee).map((res: Response) => res.json());
   }

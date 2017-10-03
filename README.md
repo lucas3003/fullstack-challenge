@@ -1,3 +1,14 @@
+@Update Lucas
+Instruções para execução:
+
+ng build
+node server
+
+O site estará disponível em: localhost:3000 
+
+Já possui um usuário cadastrado: Lucas Carvalho, com 30% de participação
+
+-----------------------------------------------
 # { "developer": "fullstack" }  SamConnect \o/
 
 Objetivo deste desafio é avaliarmos o seu domínio em desenvolvimento fullstack, ou seja, sua organização, estilo e boas práticas com o código, criação de APIs Restfull, conhecimento dos frameworks e tecnologias utilizadas.

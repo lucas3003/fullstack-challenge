@@ -5,6 +5,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 import 'rxjs/add/operator/map';
 import { EmployeeServiceService } from '../employee-service.service';
 
+import { MessageService } from '../message.service';
+import { Subscription } from 'rxjs/Subscription';
+
 
 @Component({
   selector: 'app-list-people',
@@ -15,8 +18,14 @@ import { EmployeeServiceService } from '../employee-service.service';
 
 export class ListPeopleComponent implements OnInit {
   employees: any = {};
+
+  subscription: Subscription;
   
-  constructor(private employeeService: EmployeeServiceService) { 
+  constructor(private employeeService: EmployeeServiceService, private messageService: MessageService) { 
+  	
+  	this.subscription = this.messageService.getMessage().subscribe(message => { this.getEmployees(); });
+
+
   	this.getEmployees();
   }
 
