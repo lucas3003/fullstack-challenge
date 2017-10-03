@@ -1,27 +1,28 @@
 .nameInput{
 	position: absolute; 
 	border: 0px solid;
-	width: 15%;
+	width: 17%;
+
 }
 
 .lastNameInput{
 	position: absolute; 
-	margin-left: 16%;
+	margin-left: 18%;
 	border: 0px solid;
-	width: 15%;
+	width: 17%;
 }
 
 .participationInput{
 	position: absolute; 
-	margin-left: 32%;
+	margin-left: 36%;
 	border: 0px solid;
-	width: 15%;
+	width: 17%;
 }
 
 .submitInput{
 	position: absolute; 
-	margin-left: 48%;
-	width: 8%;
+	margin-left: 54%;
+	width: 9%;
 	background-color: transparent;
 	color: white;
 	border-color: white;
